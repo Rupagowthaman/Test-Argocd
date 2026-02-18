@@ -8,14 +8,18 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: myapp
   template:
     metadata:
       labels:
-        app: nginx
+        app: myapp
     spec:
       containers:
-      - name: nginx
+      - name: myapp
         image: nginx:1.14.2
         ports:
-        - containerPort: 80
+        - containerPort: 8080
+
+
+
+
