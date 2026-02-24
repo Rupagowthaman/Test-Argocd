@@ -1,5 +1,5 @@
-appName: nginx
-
+appName: nginx-app2
+replicas: 1
 port: 80
 
 image:

@@ -1,7 +1,0 @@
-appName: nginx-app1
-
-port: 80
-
-image:
-  name: nginx:1.14.2
-  tag: latest
