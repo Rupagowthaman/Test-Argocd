@@ -7,10 +7,10 @@ spec:
   generators:
     - list:
         elements:
-        - name: App1
+        - name: app1
           path: dev/charts/App1
           namespace: app1
-        - name: App2
+        - name: app2
           path: dev/charts/App2
           namespace: App2
     
