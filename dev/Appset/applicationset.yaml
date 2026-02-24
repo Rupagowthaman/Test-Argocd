@@ -8,10 +8,10 @@ spec:
     -list:
       elements:
       - name: App1
-        path: dev/charts/App1
+        path: dev/charts/App1/
         namespace: app1
       - name: App2
-        path: dev/charts/App2
+        path: dev/charts/App2/
         namespace: App2
     
   template:
@@ -22,7 +22,7 @@ spec:
 
       source:
         repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
-        targetRevision: main
+        targetRevision: HEAD
         path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
