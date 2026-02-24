@@ -22,8 +22,8 @@ spec:
 
       source:
         repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
-        targetRevision: main
-        path: '{{path}'
+        targetRevision: HEAD
+        path: dev
         helm:
           valueFiles:
             - values.yaml
