@@ -1,7 +1,7 @@
-apiVersion: argoproj.io
+apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: my-ApplicationSet
+  name: my-AppSet
   namespace: argocd
 spec:
   generators:
