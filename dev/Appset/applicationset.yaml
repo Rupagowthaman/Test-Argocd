@@ -7,7 +7,7 @@ spec:
   generators:
     - git:
         repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
-        revision: main
+        revision: HEAD
         directories:
           - path: dev
 
@@ -19,7 +19,7 @@ spec:
 
       source:
         repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
-        targetRevision: main
+        targetRevision: HEAD
         path: charts
 
       destination:
