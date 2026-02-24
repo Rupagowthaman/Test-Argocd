@@ -23,10 +23,10 @@ spec:
       source:
         repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
         targetRevision: main
-        path: '{path}'
+        path: '{{path}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{namespace}'
+        namespace: '{{namespace}}'
 
       syncPolicy:
         automated:
