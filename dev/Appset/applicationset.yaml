@@ -20,7 +20,7 @@ spec:
       source:
         repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
         targetRevision: main
-        path: dev
+        path: charts
 
       destination:
         server: https://kubernetes.default.svc
