@@ -5,14 +5,14 @@ metadata:
   namespace: argocd
 spec:
   generators:
-    -list:
-      elements:
-      - name: App1
-        path: dev/charts/App1
-        namespace: app1
-      - name: App2
-        path: dev/charts/App2
-        namespace: App2
+    - list:
+        elements:
+        - name: App1
+          path: dev/charts/App1
+          namespace: app1
+        - name: App2
+          path: dev/charts/App2
+          namespace: App2
     
   template:
     metadata:
