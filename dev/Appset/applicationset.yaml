@@ -8,10 +8,10 @@ spec:
     -list:
       elements:
       - name: app1
-        path: charts/app1
+        path: dev/charts/app1
         namespace: app1
       - name: app2
-        path: charts/app2
+        path: dev/charts/app2
         namespace: app2
     
   template:
