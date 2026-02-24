@@ -5,12 +5,15 @@ metadata:
   namespace: argocd
 spec:
   generators:
-    - git:
-        repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
-        revision: HEAD
-        directories:
-          - path: dev
-
+    -list:
+      elements:
+      - name: app1
+        path: charts/app1
+        namespace: app1
+      - name: app2
+        path: charts/app2
+        namespace: app2
+    
   template:
     metadata:
       name: '{{ .Values.appName}}'
@@ -19,12 +22,11 @@ spec:
 
       source:
         repoURL: https://github.com/Rupagowthaman/Test-Argocd.git
-        targetRevision: HEAD
-        path: charts
-
+        targetRevision: main
+        path: '{{path}}'
       destination:
         server: https://kubernetes.default.svc
-        namespace: '{.Values.appName}'
+        namespace: '{namespace}'
 
       syncPolicy:
         automated:
