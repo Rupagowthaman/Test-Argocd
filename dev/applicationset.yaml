@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  name: my-AppSet
+  name: myAppSet
   namespace: argocd
 spec:
   generators:
     - list:
         elements:
         - name: app1
-          path: dev/charts/App1
+          path: dev/charts/app1
           namespace: app1
         - name: app2
-          path: dev/charts/App2
-          namespace: App2
+          path: dev/charts/app2
+          namespace: app2
     
   template:
     metadata:
