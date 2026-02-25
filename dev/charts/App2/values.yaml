@@ -3,5 +3,5 @@ replicas: 1
 port: 80
 
 image:
-  name: nginx:1.14.2
+  name: nginx
   tag: latest
